@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 марта!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" id="mainScreen">
+        <h1>
+            <span>🌸</span> С 8 марта! <span>🌷</span>
+        </h1>
+
+        <div class="greeting">
+            🌺 Счастья, здоровья, красоты, улыбок и весеннего настроения! 🌺
+        </div>
+
+        <div class="cards" id="cardsContainer">
+            <div class="card" data-target="мама">
+                <span class="card-emoji">👩‍👧</span>
+                <span class="card-title">Мама</span>
+            </div>
+            <div class="card" data-target="бабушка">
+                <span class="card-emoji">👵🌸</span>
+                <span class="card-title">Бабушка</span>
+            </div>
+            <div class="card" data-target="сестра">
+                <span class="card-emoji">👧🎀</span>
+                <span class="card-title">Сестра</span>
+            </div>
+            <div class="card" data-target="тётя">
+                <span class="card-emoji">👩💐</span>
+                <span class="card-title">Тётя</span>
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+            <button class="celebrate-btn" id="celebrateBtn" disabled>Поздравить</button>
+        </div>
+    </div>
+
+    <div class="result-screen" id="resultScreen">
+        <h2 id="resultTitle">С 8 марта, [имя]!</h2>
+        <p>🌷 Пусть каждый день будет наполнен радостью, цветами и любовью! Ты самая замечательная! 🌷</p>
+        <button class="back-btn" id="backBtn">◀ Ещё поздравление</button>
+    </div>
+
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
